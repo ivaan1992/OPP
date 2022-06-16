@@ -4,7 +4,7 @@ class Classroom
     @students = []
   end
 
-  attr_accessor :label, :students
+  attr_reader :label, :students
 
   def add_students(student)
     @students << student unless @students.include?(student)

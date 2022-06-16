@@ -8,4 +8,6 @@ class Rental
 
     @date = date
   end
+
+  attr_accessor :date, :person, :book
 end
