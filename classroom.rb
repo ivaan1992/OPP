@@ -1,13 +1,13 @@
 class Classroom
-    def initialize(label)
-      @label = label
-      @students = []
-    end
+  def initialize(label)
+    @label = label
+    @students = []
+  end
 
-    attr_accessor :label, :students
+  attr_accessor :label, :students
 
-    def add_students(student)
-      @students << student unless @students.include?(student)
-      student.update_classroom(self) unless student.classroom == self
-    end
+  def add_students(student)
+    @students << student unless @students.include?(student)
+    student.update_classroom(self) unless student.classroom == self
+  end
 end
