@@ -99,8 +99,8 @@ class App < Menu
       print 'Has parent permission? [y/n]:'
       permission = gets.chomp
       permission = permission == 'y'
-      @person_list << Student.new('none', age, name, permission)
-    when 2
+      @person_list << Student.new(age, name, permission) 
+      when 2
       print 'Specialization:'
       specialization = gets.chomp
       @person_list << Teacher.new(age, name, specialization)
