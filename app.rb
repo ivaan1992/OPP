@@ -25,7 +25,7 @@ class Menu
     end
   end
 
-  def switch_box # rubocop:disable Metrics/CyclomaticComplexity
+  def switch_box
     case @user_choice
     when 1
       list_all_books
@@ -119,7 +119,7 @@ class App < Menu
     menu
   end
 
-  def create_rental # rubocop:disable Metrics/MethodLength
+  def create_rental
     if @book_list.length.zero?
       puts "\nThere aren't any books to rent!
       Create a book first!\n\n"
