@@ -25,7 +25,7 @@ class Menu
     end
   end
 
-  def switch_box
+  def switch_box # rubocop:disable Metrics/CyclomaticComplexity
     case @user_choice
     when 1
       list_all_books
